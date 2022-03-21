@@ -25,7 +25,7 @@ class ProductosActivity : AppCompatActivity() {
         agregarProductos(menuOption)
 
         var listView: ListView = findViewById(R.id.listProductos) as ListView
-        var adaptador = AdaptadorProductos(this, menu)
+        var adaptador = AdaptadorProductos(this, menu, menuOption)
         listView.adapter=adaptador
     }
 
@@ -127,10 +127,12 @@ class ProductosActivity : AppCompatActivity() {
     private class AdaptadorProductos: BaseAdapter {
         var productos = ArrayList<Product>()
         var contexto: Context?=null
+        var option: String?= null
 
-        constructor(contexto: Context, producto: ArrayList<Product>){
+        constructor(contexto: Context, producto: ArrayList<Product>, option: String?){
             this.productos=producto
             this.contexto=contexto
+            this.option=option
         }
 
         override fun getCount(): Int {
@@ -157,7 +159,20 @@ class ProductosActivity : AppCompatActivity() {
 
             //Este hace que se vaya a al producto view
             imagen.setOnClickListener{
-                val intent = Intent(contexto, Detalles1::class.java)
+                var intent = Intent(contexto, Detalles1::class.java)
+
+                when(option){
+                    "tacos"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "sopas"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "antojitos"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "especialidades"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "caldos"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "combinations"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "tortas"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "sides"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "drinks"  -> intent = Intent(contexto, Detalles2::class.java)
+                }
+
                 intent.putExtra("nombre", prod.name)
                 intent.putExtra("imagen",prod.image)
                 intent.putExtra("precio",prod.price)
@@ -166,7 +181,20 @@ class ProductosActivity : AppCompatActivity() {
             }
 
             nombre.setOnClickListener{
-                val intent = Intent(contexto, Detalles1::class.java)
+                var intent = Intent(contexto, Detalles1::class.java)
+
+                when(option){
+                    "tacos"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "sopas"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "antojitos"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "especialidades"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "caldos"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "combinations"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "tortas"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "sides"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "drinks"  -> intent = Intent(contexto, Detalles2::class.java)
+                }
+
                 intent.putExtra("nombre", prod.name)
                 intent.putExtra("imagen",prod.image)
                 intent.putExtra("precio",prod.price)
@@ -174,7 +202,20 @@ class ProductosActivity : AppCompatActivity() {
 
             }
             desc.setOnClickListener{
-                val intent = Intent(contexto, Detalles1::class.java)
+                var intent = Intent(contexto, Detalles1::class.java)
+
+                when(option){
+                    "tacos"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "sopas"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "antojitos"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "especialidades"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "caldos"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "combinations"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "tortas"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "sides"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "drinks"  -> intent = Intent(contexto, Detalles2::class.java)
+                }
+
                 intent.putExtra("nombre", prod.name)
                 intent.putExtra("imagen",prod.image)
                 intent.putExtra("precio",prod.price)
@@ -182,7 +223,20 @@ class ProductosActivity : AppCompatActivity() {
 
             }
             precio.setOnClickListener{
-                val intent = Intent(contexto, Detalles1::class.java)
+                var intent = Intent(contexto, Detalles1::class.java)
+
+                when(option){
+                    "tacos"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "sopas"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "antojitos"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "especialidades"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "caldos"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "combinations"  -> intent = Intent(contexto, Detalles1::class.java)
+                    "tortas"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "sides"  -> intent = Intent(contexto, Detalles2::class.java)
+                    "drinks"  -> intent = Intent(contexto, Detalles2::class.java)
+                }
+
                 intent.putExtra("nombre", prod.name)
                 intent.putExtra("imagen",prod.image)
                 intent.putExtra("precio",prod.price)
