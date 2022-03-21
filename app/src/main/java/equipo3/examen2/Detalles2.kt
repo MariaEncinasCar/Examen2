@@ -5,17 +5,15 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.Spinner
 import android.widget.TextView
 
-class Detalles1 : AppCompatActivity() {
-
+class Detalles2 : AppCompatActivity() {
     var precio : Double = 0.0
     var total : Double = 0.0
     var cantidad : Int = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detalles1)
+        setContentView(R.layout.activity_detalles2)
         val producto_nombre: TextView = findViewById(R.id.nombreProducto)
         val producto_precio: TextView = findViewById(R.id.precioProducto)
         val producto_img: ImageView = findViewById(R.id.imagenProducto)

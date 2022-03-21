@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Detalles1"
+    tools:context=".Detalles2"
     android:orientation="vertical"
     android:background="@drawable/first_gradient">
 
@@ -96,105 +96,6 @@
             android:textColor="@color/white"
             android:textSize="15dp" />
     </GridLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/choiceMeat"
-        android:textSize="20sp"
-        android:textColor="@color/dark_green"
-        android:layout_marginStart="4dp"/>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="213dp">
-
-        <RadioGroup
-            android:id="@+id/carne"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="10dp">
-
-            <RadioButton
-                android:id="@+id/radioAsada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/asada" />
-
-            <RadioButton
-                android:id="@+id/radioPollo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/pollo" />
-
-            <RadioButton
-                android:id="@+id/radioCarnitas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/carnitas" />
-
-            <RadioButton
-                android:id="@+id/radioChorizo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chorizo" />
-
-            <RadioButton
-                android:id="@+id/radioSuadero"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/suadero" />
-
-            <RadioButton
-                android:id="@+id/radioBuche"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/buche" />
-
-            <RadioButton
-                android:id="@+id/radioPastor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/pastor" />
-
-            <RadioButton
-                android:id="@+id/radioCachete"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cachete" />
-
-            <RadioButton
-                android:id="@+id/radioBarbacoa"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/barbacoa" />
-
-            <RadioButton
-                android:id="@+id/radioTripa"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tripa" />
-
-            <RadioButton
-                android:id="@+id/radioChicharron"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chicharron" />
-
-            <RadioButton
-                android:id="@+id/radioCueritos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/cueritos" />
-
-            <RadioButton
-                android:id="@+id/radioLengua"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/lengua" />
-        </RadioGroup>
-
-    </ScrollView>
 
     <LinearLayout
         android:layout_width="wrap_content"
