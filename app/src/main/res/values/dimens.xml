@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_buttons_paddings">5dp</dimen>
+    <dimen name="menu_buttons_margins">5dp</dimen>
+    <dimen name="menu_buttons_text">18sp</dimen>
+</resources>
