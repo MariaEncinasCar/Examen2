@@ -159,15 +159,16 @@ class ProductosActivity : AppCompatActivity() {
             imagen.setOnClickListener{
                 val intent = Intent(contexto, Detalles1::class.java)
                 intent.putExtra("nombre", prod.name)
-                intent.putExtra("imagen",prod.description)
+                intent.putExtra("imagen",prod.image)
                 intent.putExtra("precio",prod.price)
                 contexto!!.startActivity(intent)
 
             }
+
             nombre.setOnClickListener{
                 val intent = Intent(contexto, Detalles1::class.java)
                 intent.putExtra("nombre", prod.name)
-                intent.putExtra("imagen",prod.description)
+                intent.putExtra("imagen",prod.image)
                 intent.putExtra("precio",prod.price)
                 contexto!!.startActivity(intent)
 
@@ -175,7 +176,7 @@ class ProductosActivity : AppCompatActivity() {
             desc.setOnClickListener{
                 val intent = Intent(contexto, Detalles1::class.java)
                 intent.putExtra("nombre", prod.name)
-                intent.putExtra("imagen",prod.description)
+                intent.putExtra("imagen",prod.image)
                 intent.putExtra("precio",prod.price)
                 contexto!!.startActivity(intent)
 
@@ -183,7 +184,7 @@ class ProductosActivity : AppCompatActivity() {
             precio.setOnClickListener{
                 val intent = Intent(contexto, Detalles1::class.java)
                 intent.putExtra("nombre", prod.name)
-                intent.putExtra("imagen",prod.description)
+                intent.putExtra("imagen",prod.image)
                 intent.putExtra("precio",prod.price)
                 contexto!!.startActivity(intent)
 
@@ -191,6 +192,9 @@ class ProductosActivity : AppCompatActivity() {
 
             imagen.setImageResource(prod.image)
             nombre.setText(prod.name)
+            print(prod.name)
+            print(prod.name)
+            print(prod.name)
             desc.setText(prod.description)
             precio.setText("$${prod.price}")
 

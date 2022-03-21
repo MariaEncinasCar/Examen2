@@ -8,6 +8,10 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class Detalles1 : AppCompatActivity() {
+
+    var precio : Double = 0.0
+    var total : Double = 0.0
+    var cantidad : Int = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalles1)
@@ -24,10 +28,12 @@ class Detalles1 : AppCompatActivity() {
             if (queEs != null) {
                 Log.d("nombre de product view ", queEs)
             }
-            producto_nombre.setText(bundle.getString("nombre"))
-            producto_precio.setText(bundle.getString("precio"))
+            producto_nombre.setText(bundle.get("nombre").toString())
             producto_img.setImageResource(bundle.getInt("imagen"))
-            producto_total.setText(bundle.getString("precio"))
+            precio = bundle.getDouble("precio")
+            total  = bundle.getDouble("precio")
+            producto_precio.setText(precio.toString())
+            producto_total.setText(precio.toString())
         }
 
         val btn_mas: Button = findViewById(R.id.masArticulo)
@@ -35,24 +41,23 @@ class Detalles1 : AppCompatActivity() {
         val producto_cantidad: TextView = findViewById(R.id.cantidadProducto)
 
         btn_mas.setOnClickListener{
-            var cantidadInt = Integer.parseInt(producto_cantidad.text.toString())
-            var precio = Integer.parseInt(producto_precio.text.toString())
-
-            cantidadInt += 1
-            producto_cantidad.setText(cantidadInt.toString())
-            var  total= cantidadInt*precio
-            producto_total.setText(total.toString())
+            cantidad += 1
+            total = cantidad * precio
+            var formatted = String.format("%.2f",total)
+            producto_cantidad.setText(cantidad.toString())
+            producto_total.setText(formatted)
         }
 
         btn_menos.setOnClickListener{
-            var cantidadInt = Integer.parseInt(producto_cantidad.text.toString())
-            var precio = Integer.parseInt(producto_precio.text.toString())
-            if(cantidadInt>1){
-                cantidadInt -= 1
-                producto_cantidad.setText(cantidadInt.toString())
-                var  total= cantidadInt*precio
-                producto_total.setText(total.toString())
+            cantidad = when(cantidad > 0){
+                true -> cantidad - 1
+                false -> 0
             }
+            total = cantidad * precio
+            var formatted = String.format("%.2f",total)
+            producto_cantidad.setText(cantidad.toString())
+            producto_total.setText(formatted)
+
         }
     }
 }
