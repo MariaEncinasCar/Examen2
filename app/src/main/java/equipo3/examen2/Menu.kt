@@ -21,7 +21,7 @@ class Menu : AppCompatActivity() {
         val btnCarro : Button = findViewById(R.id.carrito)
 
         btnCarro.setOnClickListener {
-            val intent= Intent(this, carritoActivity::class.java)
+            var intent= Intent(this, carritoActivity::class.java)
             startActivity(intent)
         }
 
