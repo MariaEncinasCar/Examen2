@@ -1,19 +1,22 @@
 package equipo3.examen2
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class Detalles2 : AppCompatActivity() {
     var precio : Double = 0.0
     var total : Double = 0.0
     var cantidad : Int = 1
+    var imagen : Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalles2)
+
         val producto_nombre: TextView = findViewById(R.id.nombreProducto)
         val producto_precio: TextView = findViewById(R.id.precioProducto)
         val producto_img: ImageView = findViewById(R.id.imagenProducto)
@@ -31,12 +34,18 @@ class Detalles2 : AppCompatActivity() {
             producto_img.setImageResource(bundle.getInt("imagen"))
             precio = bundle.getDouble("precio")
             total  = bundle.getDouble("precio")
+            imagen = bundle.getInt("imagen")
+            precio = bundle.getDouble("precio")
+            total  = bundle.getDouble("precio")
             producto_precio.setText(precio.toString())
             producto_total.setText(precio.toString())
+            producto_img.setImageResource(imagen)
         }
 
         val btn_mas: Button = findViewById(R.id.masArticulo)
         val btn_menos: Button = findViewById(R.id.menosArticulo)
+        val btn_agregar: Button = findViewById(R.id.producto_agregar)
+
         val producto_cantidad: TextView = findViewById(R.id.cantidadProducto)
 
         btn_mas.setOnClickListener{
@@ -57,6 +66,21 @@ class Detalles2 : AppCompatActivity() {
             producto_cantidad.setText(cantidad.toString())
             producto_total.setText(formatted)
 
+        }
+
+
+        btn_agregar.setOnClickListener{
+            var producto : Product = Product(
+                producto_nombre.text.toString(),
+                imagen,
+                "",
+                precio
+
+            )
+            var elementoCarro : ElementoCarro = ElementoCarro(producto,"",cantidad,total)
+            Carrito.compra.add(elementoCarro)
+            var intent: Intent = Intent(this,Menu::class.java)
+            startActivity(intent)
         }
     }
 }

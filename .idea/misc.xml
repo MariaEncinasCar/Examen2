@@ -3,10 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/Fidel/Documents/GitHub/Examen2/app/src/main/res/layout/activity_carrito.xml" value="0.25" />
         <entry key="..\:/Users/Fidel/Documents/GitHub/Examen2/app/src/main/res/layout/activity_detalles1.xml" value="0.25" />
         <entry key="..\:/Users/Fidel/Documents/GitHub/Examen2/app/src/main/res/layout/activity_detalles2.xml" value="0.25" />
         <entry key="..\:/Users/Fidel/Documents/GitHub/Examen2/app/src/main/res/layout/detalle_carrito.xml" value="0.25" />
+=======
+        <entry key="..\:/Users/Arcke/OneDrive/Escritorio/Respaldo/Documentos/GitHub/Examen/app/src/main/res/layout/activity_carrito.xml" value="0.4239583333333333" />
+        <entry key="..\:/Users/Arcke/OneDrive/Escritorio/Respaldo/Documentos/GitHub/Examen/app/src/main/res/layout/activity_detalles1.xml" value="0.21197916666666666" />
+        <entry key="..\:/Users/Arcke/OneDrive/Escritorio/Respaldo/Documentos/GitHub/Examen/app/src/main/res/layout/activity_detalles2.xml" value="0.21197916666666666" />
+        <entry key="..\:/Users/Arcke/OneDrive/Escritorio/Respaldo/Documentos/GitHub/Examen/app/src/main/res/layout/activity_main.xml" value="0.31068840579710144" />
+        <entry key="..\:/Users/Arcke/OneDrive/Escritorio/Respaldo/Documentos/GitHub/Examen/app/src/main/res/layout/activity_menu.xml" value="0.31068840579710144" />
+        <entry key="..\:/Users/Arcke/OneDrive/Escritorio/Respaldo/Documentos/GitHub/Examen/app/src/main/res/layout/activity_productos.xml" value="0.21197916666666666" />
+        <entry key="..\:/Users/Arcke/OneDrive/Escritorio/Respaldo/Documentos/GitHub/Examen/app/src/main/res/layout/carrito.xml" value="0.21197916666666666" />
+        <entry key="..\:/Users/Arcke/OneDrive/Escritorio/Respaldo/Documentos/GitHub/Examen/app/src/main/res/layout/detalle_carrito.xml" value="0.5" />
+        <entry key="..\:/Users/Arcke/OneDrive/Escritorio/Respaldo/Documentos/GitHub/Examen/app/src/main/res/layout/producto_view.xml" value="0.21197916666666666" />
+>>>>>>> terminado
         <entry key="..\:/Users/Zarith/AndroidStudioProjects/Examen2/app/src/main/res/drawable-hdpi/button.xml" value="0.123" />
         <entry key="..\:/Users/Zarith/AndroidStudioProjects/Examen2/app/src/main/res/drawable-hdpi/first_gradient.xml" value="0.123" />
         <entry key="..\:/Users/Zarith/AndroidStudioProjects/Examen2/app/src/main/res/layout/activity_detalles1.xml" value="0.20416666666666666" />
@@ -14,10 +26,6 @@
         <entry key="..\:/Users/Zarith/AndroidStudioProjects/Examen2/app/src/main/res/layout/activity_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Zarith/AndroidStudioProjects/Examen2/app/src/main/res/layout/activity_productos.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Zarith/AndroidStudioProjects/Examen2/app/src/main/res/layout/producto_view.xml" value="0.33" />
-        <entry key="..\:/Users/Zarith/Documents/GITHUB/Examen2/app/src/main/res/layout/activity_detalles1.xml" value="0.2" />
-        <entry key="..\:/Users/Zarith/Documents/GITHUB/Examen2/app/src/main/res/layout/activity_detalles2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Zarith/Documents/GITHUB/Examen2/app/src/main/res/layout/activity_menu.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Zarith/Documents/GITHUB/Examen2/app/src/main/res/layout/activity_productos.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

@@ -27,6 +27,7 @@
     <string name="chicharron">Chicharrón/Pork Rinds</string>
     <string name="cueritos">Cueritos/Pork Skin</string>
     <string name="lengua">Lengua</string>
+    <string name="cantidad">Cantidad:</string>
 
     <string name="rice">Rice</string>
     <string name="beans">Beans</string>
@@ -177,5 +178,7 @@
     <string name="seleccione">Seleccione una opción</string>
     <string name="choiceMeat">Choice of meat</string>
     <string name="tamanio">Tamaño</string>
+
+    <string name="carrito">Carrito</string>
 
 </resources>
