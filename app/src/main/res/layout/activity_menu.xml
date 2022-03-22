@@ -15,16 +15,16 @@
         android:background="@drawable/button"
         android:textSize="@dimen/menu_buttons_text"
         android:paddingVertical="@dimen/menu_buttons_paddings"
-        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"/>
 
     <ImageView
         android:layout_width="241dp"
-        android:layout_height="244dp"
-        android:src = "@drawable/logo"
+        android:layout_height="229dp"
+        android:layout_gravity="center"
         android:layout_marginTop="0dp"
-        android:layout_gravity="center" />
+        android:src="@drawable/logo" />
 
     <GridLayout
         android:layout_width="match_parent"

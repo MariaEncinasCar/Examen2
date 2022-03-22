@@ -18,8 +18,9 @@ class Menu : AppCompatActivity() {
         val btnDrinks : Button = findViewById(R.id.button_drinks)
         val btnEspecialidades : Button = findViewById(R.id.button_especialidades)
         val btnSides : Button = findViewById(R.id.button_sides)
+        val btnCarro : Button = findViewById(R.id.carrito)
 
-        btnTacos.setOnClickListener {
+        btnCarro.setOnClickListener {
             val intent= Intent(this, carritoActivity::class.java)
             startActivity(intent)
         }
