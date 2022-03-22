@@ -22,15 +22,15 @@
     <ImageView
         android:id="@+id/imagenProducto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         android:src="@drawable/tacos"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"/>
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
         android:columnCount="2"
         android:orientation="horizontal">
 
@@ -61,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="15dp"
         android:columnCount="3"
         android:orientation="horizontal">
@@ -107,7 +107,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="213dp">
+        android:layout_height="200dp">
 
         <RadioGroup
             android:id="@+id/carne"
@@ -200,7 +200,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginVertical="50dp"
+        android:layout_marginVertical="10dp"
         android:orientation="horizontal">
 
         <TextView
