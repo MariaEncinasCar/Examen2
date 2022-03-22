@@ -178,4 +178,6 @@
     <string name="choiceMeat">Choice of meat</string>
     <string name="tamanio">Tamaño</string>
 
+    <string name="carrito">Carrito</string>
+
 </resources>
